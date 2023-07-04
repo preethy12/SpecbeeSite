@@ -12,6 +12,26 @@
   font-weight: bold;
   color: #0020f6;
 }
+@media only screen and (min-width: 379px) and (max-width: 768px) {
+  .standing__title {
+    font-size: 4rem;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-weight: bold;
+    color: #001186;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  .standing__title {
+    font-size: 2.7rem;
+    padding-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    font-weight: bold;
+    color: #001186;
+  }
+}
 .standing__title::before {
   content: "";
   height: 0.75rem;
@@ -21,6 +41,11 @@
   vertical-align: middle;
   margin-right: 50px;
   background-color: #e3f307;
+}
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  .standing__title::before {
+    display: none;
+  }
 }
 .standing-out {
   display: flex;
@@ -48,6 +73,15 @@
   position: relative;
   height: 400px;
 }
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  .standing-out__content {
+    margin: 15px;
+    background-color: rgb(243, 242, 242);
+    margin-left: 37px;
+    margin-right: 44px;
+    width: 95%;
+  }
+}
 .standing-out__content:hover .standing-out__content-wrap {
   height: 400px;
   position: absolute;
@@ -61,9 +95,20 @@
 .standing-out__content:hover .standing-out__content-wrap .standing-out__content-desc {
   overflow: visible;
 }
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  .standing-out__content:hover .standing-out__content-wrap {
+    width: 307px;
+  }
+}
 .standing-out__content-img img {
   width: 355px;
   height: 255px;
+}
+@media only screen and (min-width: 0px) and (max-width: 378px) {
+  .standing-out__content-img img {
+    width: 305px;
+    height: 250px;
+  }
 }
 .standing-out__content-title {
   color: #001186;
@@ -87,28 +132,6 @@
 }
 
 @media only screen and (min-width: 0px) and (max-width: 378px) {
-  .standing__title {
-    font-size: 2.7rem;
-    padding-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
-    font-weight: bold;
-    color: #001186;
-  }
-  .standing__title::before {
-    display: none;
-  }
-  .standing-out__content {
-    margin: 15px;
-    background-color: rgb(243, 242, 242);
-    margin-left: 37px;
-    margin-right: 44px;
-    width: 95%;
-  }
-  .standing-out__content-img img {
-    width: 305px;
-    height: 250px;
-  }
   .standing-out__content-desc {
     width: 270px;
     margin-left: 20px;
@@ -128,15 +151,5 @@
     width: 50px;
     position: absolute;
     right: 0;
-  }
-}
-@media only screen and (min-width: 379px) and (max-width: 768px) {
-  .standing__title {
-    font-size: 4rem;
-    padding-left: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 100px;
-    font-weight: bold;
-    color: #001186;
   }
 }/*# sourceMappingURL=standingout.css.map */

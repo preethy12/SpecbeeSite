@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@300&display=swap');
+@use'./abstract/colors' as *;
 
 *{
     margin:0;
@@ -7,7 +8,7 @@
 }
 .drupal{
     &-services{
-    background-color:#0020f6 ;
+    background-color:$secondary-blue ;
     @media only screen and (min-width:375px )and (max-width:667px) {
             padding-bottom: 85px;
             padding-top: 85px;
@@ -22,12 +23,12 @@
         margin-top: 0;
         font-size:5rem;
         padding-top:5rem;
-        color:white;
+        color:$primary-white;
         @media only screen and (min-width:375px )and (max-width:667px) {
         margin-top: 0;
         font-size:2.5rem;
         padding-top:unset;
-        color:white;
+        color:$primary-white;
         margin-bottom: 30px;
         padding-left: 80px;
         }
@@ -43,7 +44,7 @@
             margin-bottom:15px;
             vertical-align: middle;
             margin-right:50px;
-            background-color: yellow;
+            background-color: $primary-yellow;
             @media only screen and (min-width:375px )and (max-width:667px) {
                 content: "";
                 position: absolute;
@@ -53,7 +54,7 @@
                 margin-bottom:15px;
                 vertical-align: middle;
                 margin-right:unset;
-                background-color: yellow;
+                background-color:$secondary-yellow;
                 margin-right: 10px;
                 left: 0;
             }
@@ -114,7 +115,7 @@
     &__card{
         width:30%;
         text-align: center;
-        color: white;
+        color: $primary-white;
         position: relative;
         @media only screen and (min-width:375px )and (max-width:667px) {
             width:unset;
@@ -122,7 +123,7 @@
     }
     &--link{
         text-decoration: none;
-        color: white;
+        color: $primary-white;
     }
     &__desc{
         margin-top: 15px;

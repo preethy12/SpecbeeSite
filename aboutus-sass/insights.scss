@@ -1,7 +1,7 @@
 @use './abstract/colors' as *;
 .insights{
     width: 100%;
-    background-color: #0020f6;
+    background-color:$secondary-blue;
     &-container{
         display: flex;
         flex-direction: column;
@@ -56,7 +56,7 @@
                 padding-right: 0px;
                 text-transform: uppercase;
                 &::before{
-                background-color:#e3f307;
+                background-color:$secondary-yellow;
                 content: "";
                 height: 0.25rem;
                 width: 4.375rem;
@@ -82,7 +82,7 @@
             font-family: Arial, Helvetica, sans-serif;
             padding-top:100px ;
             font-weight: bold;
-            color: white;
+            color: $primary-white;
             margin-bottom: 25px;
 
             &::before{
@@ -116,7 +116,7 @@
             font-family: Arial, Helvetica, sans-serif;
             padding-top:100px ;
             font-weight: bold;
-            color: white;
+            color: $primary-white;
             margin-bottom: 25px;
 
             &::before{
@@ -145,7 +145,7 @@
 @media only screen and (min-width:668px )and (max-width:1024px){
 .insights-container__cards-1 {
     margin: 5px;
-    background-color: white;
+    background-color: $primary-white;
     height: 420px;
     display: inline-block;
     width: 106%;
