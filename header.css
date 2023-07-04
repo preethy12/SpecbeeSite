@@ -1,0 +1,131 @@
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.header{
+    background-color: #0020f6;
+    backdrop-filter: blur(0.5rem);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.navbar {
+  margin-left: 20px;
+  margin-right: 20px;
+
+  padding: 20px 0;
+  }
+.nav-item {
+    margin-left: 5rem;
+    margin: 1.5rem 0;
+}
+.nav-link:hover{
+    color: yellow;
+}
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 4.55rem;
+    flex-direction: column;
+    background-color: #0020f6;
+    width: 100%;
+    text-align:center;
+    transition: 0.1s step-end;
+    height: auto;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-link{
+        font-size: 3.5rem;
+        color: white;
+        font-weight: 900;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        margin-right: 30px;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navigation-icons{
+        display: flex;
+    }
+    .header-container--button {
+    height: 35px;
+    width: 110px;
+    background-color: #e3f307;
+    border: 1px solid #e3f307;
+    border-radius: 5px;
+    color: #0020f6;
+    margin-right: 20px;
+    }
+    .header-container--button:hover {
+    height: 35px;
+    width: 110px;
+    background-color: #0020f6;
+    border: 1px solid #e3f307;
+    border-radius: 5px;
+    color: #e3f307;
+    }
+    .mobile-icon{
+      display:none;
+    }
+    @media only screen and (min-width:375px )and (max-width:667px) {
+          .header-container--button{
+              display:none;
+          }
+         .nav-link{
+          font-size: 1.5rem;
+          color: white;
+          font-weight: 900;
+      }
+      .mobile-icon{
+        display:inline-block;
+      }
+      .navbar {
+        margin-left: 20px;
+        margin-right: unset;
+
+        padding: 20px 0;
+      }
+    }
+
