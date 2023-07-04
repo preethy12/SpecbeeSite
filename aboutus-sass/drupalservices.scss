@@ -1,59 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&family=Roboto&family=Roboto+Condensed:wght@300&family=Work+Sans:wght@300&display=swap');
 
-@use './abstract/colors' as *;
 *{
     margin:0;
     padding:0;
     font-family: 'Roboto', sans-serif;
 }
-.drupal-services{
-    background-color:$secondary-blue ;
-    &__heading {
-        margin-top: 0;
-        font-size: 5rem;
-        padding-top: 5rem;
-        color: $primary-white;
+.drupal{
+    &-services{
+    background-color:#0020f6 ;
+    @media only screen and (min-width:375px )and (max-width:667px) {
+            padding-bottom: 85px;
+            padding-top: 85px;
     }
-    &::before {
-        content: "";
-        height: 0.75rem;
-        width: 150px;
-        display: inline-block;
-        margin-bottom: 15px;
-        vertical-align: middle;
-        margin-right: 50px;
-        background-color: $primary-yellow;
-      }
+    @media only screen and (min-width:668px )and (max-widthdx:1024px){
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+    &__heading{
+        margin-top: 0;
+        font-size:5rem;
+        padding-top:5rem;
+        color:white;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+        margin-top: 0;
+        font-size:2.5rem;
+        padding-top:unset;
+        color:white;
+        margin-bottom: 30px;
+        padding-left: 80px;
+        }
+        @media only screen and (min-width:668px )and (max-widthdx:1024px){
+            padding-top: unset;
+            width: 50%;
+        }
+        &::before{
+            content: "";
+            height:0.75rem;
+            width:150px;
+            display:inline-block;
+            margin-bottom:15px;
+            vertical-align: middle;
+            margin-right:50px;
+            background-color: yellow;
+            @media only screen and (min-width:375px )and (max-width:667px) {
+                content: "";
+                position: absolute;
+                height:0.65rem;
+                width:40px;
+                display:inline-block;
+                margin-bottom:15px;
+                vertical-align: middle;
+                margin-right:unset;
+                background-color: yellow;
+                margin-right: 10px;
+                left: 0;
+            }
+            @media only screen and (min-width:668px )and (max-widthdx:1024px){
+                display: none;
+            }
+        }
+    }
+    }
 }
 .service{
-    &__wrapper{
-        max-width: 65rem;
-        padding-top: 50px;
-        margin: 0 auto;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        gap:2.5rem;
-        padding-bottom: 50px;
-    }
-    &__card{
-        width:30%;
-        text-align: center;
-        color: $primary-white;
-        position: relative;
-    }
-    &--link{
-        text-decoration: none;
-        color: $primary-white;
-    }
-    &__desc{
-        margin-top: 15px;
-        font-size: 1rem;
-        font-weight: 400;
-    }
-    &__title{
-        font-size:1.5rem;
-        margin-top: 20px;
-    }
     &__image__wrapper{
         background-image: url('https://www.specbee.com/themes/custom/specbee/assets/media/icons/polygon.svg');
         background-repeat: no-repeat;
@@ -84,75 +95,54 @@
             width:6rem;
         }
     }
-
-}
-@media only screen and (min-width:375px )and (max-width:667px) {
-    .drupal{
-        &-services{
-            padding-bottom: 85px;
-            padding-top: 85px;
-            &__heading{
-                margin-top: 0;
-                font-size:2.5rem;
-                padding-top:unset;
-                color:$primary-white;
-                margin-bottom: 30px;
-                padding-left: 80px;
-                &::before{
-                    content: "";
-                    position: absolute;
-                    height:0.65rem;
-                    width:40px;
-                    display:inline-block;
-                    margin-bottom:15px;
-                    vertical-align: middle;
-                    margin-right:unset;
-                    background-color: $primary-yellow;
-                    margin-right: 10px;
-                    left: 0;
-                }
-            }
-        }
-
-    }
-    .service{
-        &__wrapper
-        {
+    &__wrapper{
+        max-width: 65rem;
+        padding-top: 50px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        gap:2.5rem;
+        padding-bottom: 50px;
+        @media only screen and (min-width:375px )and (max-width:667px) {
         flex-direction: column;
         flex-wrap: wrap;
         padding-top: 75px;
-        padding:0px 20px;
+        padding:0px 20px
         }
-
-        &__card{
+    }
+    &__card{
+        width:30%;
+        text-align: center;
+        color: white;
+        position: relative;
+        @media only screen and (min-width:375px )and (max-width:667px) {
             width:unset;
         }
-        &__title{
-            font-size:1.25rem;
-            font-weight: 900;
-        }
-        &__desc{
+    }
+    &--link{
+        text-decoration: none;
+        color: white;
+    }
+    &__desc{
+        margin-top: 15px;
+        font-size: 1rem;
+        font-weight: 400;
+        @media only screen and (min-width:375px )and (max-width:667px) {
             margin-top: 15px;
         }
     }
-}
-@media only screen and (min-width:668px )and (max-width:1024px){
-    .drupal-services{
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-        &__heading {
-            padding-top: unset;
-            width: 50%;
-            &::before{
-                display: none;
-            }
+    &__title{
+        font-size:1.5rem;
+        margin-top: 20px;
+        @media only screen and (min-width:375px )and (max-width:667px) {
+            font-size:1.25rem;
+            font-weight: 900;
+        }
+        @media only screen and (min-width:668px )and (max-widthdx:1024px){
+            font-size:1.1rem;
+            margin-top: 20px;
+            font-weight: 900;
         }
     }
-    .service__title{
-        font-size:1.1rem;
-        margin-top: 20px;
-        font-weight: 900;
-        }
 }
